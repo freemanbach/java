@@ -10,7 +10,7 @@
 import java.util.*;
 import java.lang.*;
 
-class IOHobbitException extends java.lang.Exception {
+class IOHobbitException extends Exception {
 }
 
 public class Sample {
