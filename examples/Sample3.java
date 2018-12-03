@@ -12,24 +12,40 @@ import java.util.*;
 
 class IOHobbitException extends Exception {
 
-	public void prtReadError() {
-		System.out.println("not able to read file");
+	public IOHobbitException() {
+	}
+
+	public IOHobbitException(String em) {
+		System.out.println(em);
+	}
+
+	public void prtReadError(String em) {
+		System.out.println(em);
+	}
+	public void prtWriteError(String em) {
+		System.out.println(em);
 	}
 }
 
 
 public class Sample3 {
-	public static void main(String[] args) throws IOHobbitException, Exception {
+	public static void main(String[] args) throws IOHobbitException {
 		
-		String rl = null;
+		String fn = "data.txt";
+		File f1 = new File(fn); 
+
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("data.txt"));
-			rl = br.readLine();
-			System.out.println(rl);
+			 Scanner sc = new Scanner(new File(fn)); 
+
+			if ( sc.hasNextLine() ) {
+				System.out.println(sc.nextLine());
+			}
 		}
-		catch (IOHobbitException e) {
-			e.prtReadError();
-			//e.getMessage();
+		catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }
