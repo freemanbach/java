@@ -29,10 +29,10 @@ class IOHobbitException extends Exception {
 
 
 public class Sample3 {
+
 	public static void main(String[] args) throws IOHobbitException {
 		
 		String fn = "data.txt";
-		File f1 = new File(fn); 
 
 		try {
 			 Scanner sc = new Scanner(new File(fn)); 
@@ -40,12 +40,16 @@ public class Sample3 {
 			if ( sc.hasNextLine() ) {
 				System.out.println(sc.nextLine());
 			}
+			else {
+				throw new IOHobbitException("Nothing is there");
+			}
 		}
 		catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
-		catch (Exception e) {
-			e.printStackTrace();
+		catch (IOHobbitException e) {
+			System.out.println(e.getMessage());
 		}
+	
 	}
 }
