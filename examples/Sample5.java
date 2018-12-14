@@ -26,12 +26,9 @@ public class Sample5 {
         public static void main(String[] args) throws IOHobbitException {
 
         int size = args.length;
-        if (size == 0) {
+        if (size < 2) {
             System.out.println("Too few parameters !");
         }
-        else if (size == 1) {
-            System.out.println("Too few peremeters.");
-        } 
         else if (size == 2) {
             System.out.print(args[0].toString() + " ");
             System.out.print(args[1].toString());
