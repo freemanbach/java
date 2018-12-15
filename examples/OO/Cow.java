@@ -64,10 +64,8 @@ public class Cow extends Animal {
 		if ( super.getType().toLowerCase().equals( new String("angus")) ) {
 			return true;
 		}
-		else {
-			super.canSpeak();
-		}
-		return false;
+
+		return super.canSpeak();
 	}
 
 	// need this since i need automatic name
