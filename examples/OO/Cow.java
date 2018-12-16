@@ -68,11 +68,6 @@ public class Cow extends Animal {
 		return super.canSpeak();
 	}
 
-	// need this since i need automatic name
-	public String getName() {
-		return super.getName();
-	}
-	
     public String toString() {
 		return "HOBBIT";
     }
