@@ -10,9 +10,6 @@ import java.io.*;
 import java.util.*;
 import java.lang.*;
 
-class IOHobbitException extends Exception {
-}
-
 
 // class Sample2
 public class Sample2{

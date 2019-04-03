@@ -7,8 +7,6 @@
  *
  */
 
-import java.io.*;
-import java.util.*;
 
 class IOHobbitException extends Exception {
 
