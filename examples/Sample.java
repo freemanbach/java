@@ -19,5 +19,6 @@ public class Sample {
 		String mess = "Hello Planet, Earth!";
 		System.out.println(mess);
 
+		System.exit(0);
 	}
 }
