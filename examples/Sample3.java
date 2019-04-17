@@ -7,6 +7,8 @@
  *
  */
 
+import java.io.*;
+import java.util.Scanner;
 
 class IOHobbitException extends Exception {
 
