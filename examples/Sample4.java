@@ -56,9 +56,9 @@ public class Sample4 {
         System.out.println("Your inputs are: " + a + " " + b);
         System.out.println("\n");
 
-	    Scanner sc = new Scanner(System.in); 
+        Scanner sc = new Scanner(System.in); 
         System.out.print("Enter in a string? ");
-		String c = sc.nextLine();
+	String c = sc.nextLine();
         System.out.print("Enter in a Float number? ");
         float d = Float.parseFloat(sc.nextLine());
         System.out.println("your outputs are: " + c + " " + d);
