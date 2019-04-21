@@ -35,7 +35,7 @@ public class Sample4 {
 	public static void main(String[] args) throws IOHobbitException {
 		
         BufferedReader read = new BufferedReader(new InputStreamReader(System.in)); 
-        System.out.print("Enter an integer"); 
+        System.out.print("Enter an integer: "); 
 
         int a = 0; String b = "";
         try {
