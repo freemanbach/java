@@ -59,7 +59,31 @@ public class Sample2{
 			System.out.println("Your items are: " + f + " fruit.");
 		}		
 	}
-	
+
+	public void testArrayLists() {
+		Random rand = new Random();
+		// Array List with String obj
+		ArrayList <String> sArrList = new ArrayList <String>();
+		String mess = "";
+		sArrList.add("Cheese");
+		sArrList.add("Cake");
+		sArrList.add("ist");
+		sArrList.add("Awosome");
+		for ( int a=0; a<sArrList.size(); a++) {
+			mess += sArrList.get(a) + " ";
+		}
+		System.out.println(mess);
+
+		// Array List with Integer obj
+		ArrayList <Integer> iArrList= new ArrayList <Integer>();
+		for ( int y = 0; y<10; y++) {	
+			iArrList.add(rand.nextInt(100));
+		}
+		for (int x=0; x<10; x++) {
+			System.out.println(iArrList.get(x).toString());
+		}
+	}
+
 	// main driver class
 	public static void main(String [] args) throws IOHobbitException {
 		
@@ -77,5 +101,7 @@ public class Sample2{
 		
 		// array testing
 		mx.testArray1();
+		// Array List
+		mx.testArrayLists();
 	}
 }
