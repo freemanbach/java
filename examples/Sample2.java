@@ -20,6 +20,7 @@ public class Sample2{
 	int x = 0;                                 // primative data type int
 	float y = 3.14f;                           // primitive data type float
 	double z = 0.00;                           // primitive data type double
+	int m=0,n=0,o=0;                           // primitive data type int different form
 	
 	// These are different from the set from above
 	Integer a = new Integer("23");             // integer object
