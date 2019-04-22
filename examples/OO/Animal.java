@@ -10,11 +10,12 @@
 
 public class Animal {
 
-	private double food; // numeric
-	private String name; // string
-	private String type; // string
-	private double water; // numeric
-	private double weight;  // numeric
+	private double food;        // numeric
+	private String name;        // string
+	private String type;        // string
+	private double water;       // numeric
+	private double weight;      // numeric
+	private double height;      // numeric
 
 	public Animal() {
 		this.food = 0.00;
@@ -22,14 +23,16 @@ public class Animal {
 		this.type = "";
 		this.water = 0.00;
 		this.weight = 0.00;
+		this.height= 0.00;
 	}
 
-	public Animal(double food, String name, String type, double water, double weight) {
+	public Animal(double food, String name, String type, double water, double weight, double height) {
 		this.food = food;
 		this.name = name;
 		this.type = type;
 		this.water = water;
 		this.weight = weight;
+		this.height = height;
 	}
 
 	public double getFood() {
@@ -52,6 +55,10 @@ public class Animal {
 		return this.weight;
 	}
 
+	public double getHeight() {
+		return this.height;
+	}
+
 	public void setFood(double food) {
 		this.food = food;
 	}
@@ -72,9 +79,13 @@ public class Animal {
 		this.weight = weight;
 	}
 
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
 	public boolean isMammal() {
-        return true;
-    }
+	        return true;
+	}
 
 	public boolean canSpeak() {
 		return false;
