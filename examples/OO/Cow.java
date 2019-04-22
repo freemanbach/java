@@ -2,7 +2,7 @@
  *
  * @author Freeman
  * @version 0.0.1 
- * @date 2018.12.14
+ * @date 2019.04.21
  * @vim set tabstop=4
  *
  */
@@ -23,20 +23,20 @@ public class Cow extends Animal {
 	}
 	
 	// Special Cow
-	public Cow ( double food, String name, String type, double water, double weight, double hoofsize, boolean nosering, String lang ) {
-		super( food, name, type, water, weight );
+	public Cow ( double food, String name, String type, double water, double weight, double height, double hoofsize, boolean nosering, String lang ) {
+		super( food, name, type, water, weight, height );
 		this.hoofsize = hoofsize;
 		this.nosering = nosering;
 		this.lang = lang;
 	}
 	
 	public double getHoofSize() {
-        return this.hoofsize;
-    }
+		return this.hoofsize;
+	}
 
 	public boolean getNoseRing() {
-        return this.nosering;
-    }
+		return this.nosering;
+	}
 
 	public boolean eatGrass() {
 		return true;
