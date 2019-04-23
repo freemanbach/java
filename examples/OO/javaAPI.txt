@@ -1,0 +1,8 @@
+https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html
+https://docs.oracle.com/javase/9/docs/api/index.html?overview-summary.html
+https://docs.oracle.com/javase/10/docs/api/index.html?overview-summary.html
+https://docs.oracle.com/en/java/javase/11/docs/api/index.html
+https://docs.oracle.com/en/java/javase/12/docs/api/index.html
+
+Oracle Help JDk12
+https://docs.oracle.com/en/java/javase/12/
