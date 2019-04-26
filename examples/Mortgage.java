@@ -84,7 +84,8 @@ public class Mortgage {
             System.out.println("Please enter Numbers only ! ");
             System.exit(1);
         }
-        mort.setAmount(amt);
+        //mort.setAmount(amt);
+        mort2.setAmount(amt);
         
         System.out.print("Enter in a Rate ?  ");
         rate = scan.nextLine().trim();
@@ -93,10 +94,11 @@ public class Mortgage {
              System.out.println("Please enter Numbers only ! ");
              System.exit(1);
         }
-        mort.setRate(rate);
+        //mort.setRate(rate);
+        mort2.setRate(rate);
 
 	//total = mort.processMortgage(mort.getRate(), mort.getAmount());
-	total = mort2.processMortgage(mort.getRate(), mort.getAmount());
+	total = mort2.processMortgage(mort2.getRate(), mort2.getAmount());
         System.out.println("Your monthly interests on your mortgage is: " + total);
 
     }
