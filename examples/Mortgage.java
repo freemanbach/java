@@ -23,7 +23,7 @@ public class Mortgage {
     // default Constructor
     public Mortgage() {
         this.total = 0.00;
-        this.amount = 150000.00;
+        this.amount = 50000.00;
         this.rate = .0576;
         this.days = (30.00 / 365);
     }
@@ -31,8 +31,8 @@ public class Mortgage {
     // Constructor with attibutes
     public Mortgage( double amt, double rate, double days ) {
         this.amount = amt;
-        this.rate = rate;
-        this.days = days;
+        this.rate = (rate/100.00);
+        this.days = (days/365.00);
     }
 
     public double getAmount() {
@@ -72,6 +72,7 @@ public class Mortgage {
     public static void main(String[] args) throws IOException {
 
         Mortgage mort = new Mortgage();
+	Mortgage mort2 = new Mortgage( 50000, 5.98, 30);
         Scanner scan = new Scanner(System.in);
         String amt = "0", rate = "0";
         double total =0.00;
@@ -94,7 +95,8 @@ public class Mortgage {
         }
         mort.setRate(rate);
 
-        total = mort.processMortgage(mort.getRate(), mort.getAmount());
+	//total = mort.processMortgage(mort.getRate(), mort.getAmount());
+	total = mort2.processMortgage(mort.getRate(), mort.getAmount());
         System.out.println("Your monthly interests on your mortgage is: " + total);
 
     }
