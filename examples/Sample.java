@@ -10,11 +10,9 @@
 import java.util.*;
 import java.lang.*;
 
-class IOHobbitException extends Exception {
-}
 
 public class Sample {
-	public static void main(String[] args) throws IOHobbitException {
+	public static void main(String[] args) throws IOException {
 		
 		String mess = "Hello Planet, Earth!";
 		System.out.println(mess);
