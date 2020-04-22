@@ -8,10 +8,7 @@
 // Java Libraries
 import java.io.*;
 import java.util.*;
-import java.lang.*;
 
-class IOHobbitException extends Exception {
-}
 
 // class Sample2
 public class Sample2{
@@ -86,7 +83,7 @@ public class Sample2{
 	}
 
 	// main driver class
-	public static void main(String [] args) throws IOHobbitException {
+	public static void main(String [] args) throws IOException {
 		
 		// Creating a class object
 		Sample2 mx = new Sample2();
