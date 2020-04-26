@@ -29,13 +29,12 @@ class IOHobbitException extends Exception {
 
 
 public class Sample3 {
-
 	public static void main(String[] args) throws IOHobbitException {
 		
 		String fn = "data.txt";
 
 		try {
-			 Scanner sc = new Scanner(new File(fn)); 
+			Scanner sc = new Scanner(new File(fn)); 
 
 			if ( sc.hasNextLine() ) {
 				System.out.println(sc.nextLine());
@@ -50,6 +49,5 @@ public class Sample3 {
 		catch (IOHobbitException e) {
 			System.out.println(e.getMessage());
 		}
-	
 	}
 }

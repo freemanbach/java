@@ -14,14 +14,12 @@ import java.io.IOException;
 public class Sample6{
 
 	public Sample6() {
-
 	}
 
 	public long computeOneLess(long i) {
 
 		if ( i == 1 ) {
 			return 1;
-
 		} else {
 			System.out.println("Your num ist: " + i);
 			return computeOneLess(i-1);
