@@ -7,18 +7,19 @@ import java.util.Scanner;
  * Author  : flo
  * Date    : 2020.05.11
  * Purpose : Example of a OO model of  Lottery Ticket with Threading
- *         : SOmethign i could reference for multi-threading using simple example
+ *         : Somethign i could reference for multi-threading using simple example
  * version : 0.0.2
  */
-
 
 
 public class Lotto_T {
 
     private ArrayList <Integer> myarr;
+    private Random rand;
 
     public Lotto_T() {
         myarr = new ArrayList<Integer>();
+        rand = new Random();
     }
 
     public synchronized void additemstolist(int size) {
@@ -41,14 +42,13 @@ public class Lotto_T {
     }
 
     public int genrandnum(){
-        Random rand = new Random();
-        return rand.nextInt(70)+1;
+        return this.rand.nextInt(70)+1;
     }
 
     public int genmagicnum(){
-        Random rand = new Random();
-        return rand.nextInt(25)+1;
+        return this.rand.nextInt(25)+1;
     }
+
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
@@ -61,7 +61,7 @@ public class Lotto_T {
                 }
             }
         }
-
+        
         CountingThread t1 = new CountingThread(); // prints 10 times
         CountingThread t2 = new CountingThread(); // prints 10 times
 
