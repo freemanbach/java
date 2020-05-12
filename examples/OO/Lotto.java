@@ -5,16 +5,19 @@ import java.util.Scanner;
 
 /**
  * Author  : flo
- * Date    : 2020.05.10
+ * Date    : 2020.05.11
  * Purpose : Example of a OO model of  Lottery Ticket
- * version : 0.0.1
+ * version : 0.0.2
  */
+
 public class Lotto {
 
     private ArrayList <Integer> myarr;
+    private Random rand;
 
     public Lotto() {
         myarr = new ArrayList<Integer>();
+        rand = new Random();
     }
 
     public void additemstolist(int size) {
@@ -37,13 +40,11 @@ public class Lotto {
     }
 
     public int genrandnum(){
-        Random rand = new Random();
-        return rand.nextInt(70)+1;
+        return this.rand.nextInt(70)+1;
     }
 
     public int genmagicnum(){
-        Random rand = new Random();
-        return rand.nextInt(25)+1;
+        return this.rand.nextInt(25)+1;
     }
 
     public static void main(String[] args) throws IOException {
