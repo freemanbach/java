@@ -8,16 +8,16 @@ import java.util.Scanner;
  * Date    : 2020.05.11
  * Purpose : Example of a OO model of  Lottery Ticket with Threading
  *         : SOmethign i could reference for multi-threading using simple example
- * version : 0.0.1
+ * version : 0.0.2
  */
 
 
 
-public class Lotto {
+public class Lotto_T {
 
     private ArrayList <Integer> myarr;
 
-    public Lotto() {
+    public Lotto_T() {
         myarr = new ArrayList<Integer>();
     }
 
