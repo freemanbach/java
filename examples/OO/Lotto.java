@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 /**
  * Author  : flo
- * Date    : 2020.05.11
+ * Date    : 2020.05.10
  * Purpose : Example of a OO model of  Lottery Ticket
- * version : 0.0.2
+ * version : 0.0.3
  */
 
 public class Lotto {
@@ -47,12 +47,34 @@ public class Lotto {
         return this.rand.nextInt(25)+1;
     }
 
+    public int getinput(String data) {
+
+        if (!isnumeric(data)) {
+            System.out.println("User input is not of integer value. ");
+            System.out.println("Exiting............................ ");
+            System.exit(1);
+        } else if (isnumeric(data)) {
+            return Integer.parseInt(data);
+        }
+        return 0;
+    }
+
+    public static boolean isnumeric(String str) {
+
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch(NumberFormatException e){
+            return false;
+        }
+    }
+
     public static void main(String[] args) throws IOException {
 
         Lotto ticket = new Lotto();
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter in the number of Tickets ? ");
-        int z = Integer.parseInt(scan.next());
+        System.out.print("Enter in the number of Tickets or 'q' to quit ? ");
+        int z = ticket.getinput(scan.next());
         ticket.additemstolist(z);
     }
 }
