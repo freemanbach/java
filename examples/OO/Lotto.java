@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Author  : flo
  * Date    : 2020.05.10
  * Purpose : Example of a OO model of  Lottery Ticket
- * version : 0.0.4
+ * version : 0.0.5
  */
 
 public class Lotto {
@@ -80,6 +80,6 @@ public class Lotto {
             ticket.additemstolist(z);
             System.out.print("Try again? y/n: ");
             mess = scan.next();
-        } while (mess == "y");
+        } while (mess.equalsIgnoreCase("y"));
     }
 }
